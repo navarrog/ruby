@@ -12,4 +12,5 @@ class Listing < ActiveRecord::Base
     end
     
     validates :name, :description, :price, presence: true
+    belongs_to :user
 end
